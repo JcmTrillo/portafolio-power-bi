@@ -1,0 +1,208 @@
+/*==================================
+   ESTILOS GENERALES
+==================================*/
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+body{
+   background:#eef3f8;
+}
+/*==================================
+   ENCABEZADO
+==================================*/
+header{
+   background:#0B3B75;
+   color:#fff;
+   box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+.header{
+   height:100px;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   padding:0 35px;
+}
+.logo-izq img,
+.logo-der img{
+   height:80px;
+}
+.titulo{
+   text-align:center;
+}
+.titulo h1{
+   font-size:40px;
+   font-weight:700;
+}
+.titulo p{
+   margin-top:5px;
+   color:#d6e7ff;
+}
+/*==================================
+   CONTENIDO
+==================================*/
+.contenido-inventario{
+   width:95%;
+   margin:20px auto;
+   display:grid;
+   grid-template-columns:2.4fr 1fr;
+   gap:20px;
+   align-items:start;
+}
+/*==================================
+   VISOR PDF
+==================================*/
+.visor{
+   background:#fff;
+   border-radius:15px;
+   overflow:hidden;
+   box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.pdf-toolbar{
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:center;
+   align-items:center;
+   gap:10px;
+   padding:15px;
+   background:#0B3B75;
+}
+.pdf-toolbar button,
+.download-btn{
+   background:#fff;
+   color:#0B3B75;
+   border:none;
+   padding:10px 16px;
+   border-radius:8px;
+   cursor:pointer;
+   font-weight:bold;
+   transition:.3s;
+   text-decoration:none;
+}
+.pdf-toolbar button:hover,
+.download-btn:hover{
+   background:#FFD54F;
+   transform:translateY(-2px);
+}
+.info-pagina,
+#zoom-level{
+   color:white;
+   font-weight:bold;
+}
+.pdf-container{
+   background:#d8dde5;
+   height:760px;
+   overflow:auto;
+   display:flex;
+   justify-content:center;
+   align-items:flex-start;
+   padding:25px;
+}
+#pdf-render{
+   background:white;
+   border-radius:5px;
+   box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+/*==================================
+   PANEL DERECHO
+==================================*/
+.panel-reportes{
+   display:flex;
+   flex-direction:column;
+   gap:18px;
+}
+.reporte{
+   background:white;
+   border-radius:12px;
+   padding:20px;
+   box-shadow:0 5px 15px rgba(0,0,0,.12);
+   transition:.3s;
+}
+.reporte:hover{
+   transform:translateY(-4px);
+}
+.reporte h3{
+   color:#0B3B75;
+   font-size:20px;
+   margin-bottom:15px;
+}
+.btn{
+   display:block;
+   width:100%;
+   text-align:center;
+   background:#0B3B75;
+   color:white;
+   padding:12px;
+   border-radius:10px;
+   text-decoration:none;
+   font-weight:bold;
+   transition:.3s;
+}
+.btn:hover{
+   background:#1565C0;
+}
+/*==================================
+   RESPONSIVE
+==================================*/
+@media(max-width:1100px){
+   .contenido-inventario{
+       grid-template-columns:1fr;
+   }
+   .header{
+       flex-direction:column;
+       height:auto;
+       padding:20px;
+   }
+   .logo-izq img,
+   .logo-der img{
+       height:60px;
+   }
+   .titulo h1{
+       font-size:30px;
+   }
+   .pdf-container{
+       height:550px;
+   }
+   lista-avisos {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.aviso {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #0B3B75;
+  background: #f4f8fd;
+}
+
+.aviso i {
+  font-size: 22px;
+  color: #0B3B75;
+  margin-top: 3px;
+}
+
+.aviso strong {
+  color: #0B3B75;
+}
+
+.aviso p {
+  margin-top: 4px;
+  color: #45566d;
+}
+
+.aviso-warning {
+  background: #fff8e6;
+  border-left-color: #e6a400;
+}
+
+.aviso-warning i,
+.aviso-warning strong {
+  color: #a66b00;
+}
+}

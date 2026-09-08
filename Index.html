@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Power BI | Grupo TMM</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <header class="encabezado">
+    <img class="logo" src="vws.png" alt="Volkswagen">
+
+    <div>
+      <p class="empresa">GRUPO TMM</p>
+      <h1>Portafolio Power BI</h1>
+      <p class="subtitulo">Reportes e indicadores para la operación</p>
+    </div>
+
+    <img class="logo" src="tmm.png" alt="TMM">
+  </header>
+
+  <main class="pagina">
+    <section class="introduccion">
+      <span class="etiqueta">
+        <i class="fa-solid fa-chart-line"></i>
+        Portal ejecutivo
+      </span>
+
+      <h2>Información clave, en un solo lugar.</h2>
+      <p>Descarga el Arcvhivo Inventario del dia de Hoy</p>
+
+      <!-- Coloca tu Excel dentro de la carpeta archivos -->
+      <a
+        class="btn-excel"
+        href="Inventario-Control-Tower-BASE-GENERAL-08-09-2026.xlsb"
+        download>
+        <i class="fa-solid fa-file-excel"></i>
+        Inventario-Control-Tower-BASE-GENERAL-08-09-2026
+      </a>
+    </section>
+
+    <section class="contenido-principal">
+
+      <aside class="portafolio">
+        <h2>
+          <i class="fa-solid fa-table-columns"></i>
+          Reportes
+        </h2>
+
+        <a class="reporte"
+          href="https://app.powerbi.com/view?r=eyJrIjoiMzYyZjUyNzMtZTBiMC00Y2ZmLWI2MjMtNWQ1MzZiN2M0MjRkIiwidCI6IjAwMDRlNjc2LTg3OGItNDkzNi04ZWZkLWExYjQxOWZjNTBjYiJ9&pageName=e857e4b08dca00761b17"
+          target="_blank">
+          <i class="fa-solid fa-box"></i>
+          <span>
+            <strong>Inventario Diario</strong>
+            <small>Corte general</small>
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square flecha"></i>
+        </a>
+
+        <a class="reporte"
+          href="https://app.powerbi.com/view?r=eyJrIjoiNjg2ZTc1YjItZmVhZC00NDc2LWJiZjUtOTdiOGM2ZGI0N2Y0IiwidCI6IjAwMDRlNjc2LTg3OGItNDkzNi04ZWZkLWExYjQxOWZjNTBjYiJ9"
+          target="_blank">
+          <i class="fa-solid fa-chart-column"></i>
+          <span>
+            <strong>Dashboard</strong>
+            <small>Indicadores principales</small>
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square flecha"></i>
+        </a>
+
+        <a class="reporte"
+          href="https://app.powerbi.com/view?r=eyJrIjoiMjRkZWJkNzYtNGM1NS00Mjk4LTllMDUtYzc5NTU1NWYzOWNjIiwidCI6IjAwMDRlNjc2LTg3OGItNDkzNi04ZWZkLWExYjQxOWZjNTBjYiJ9"
+          target="_blank">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>
+            <strong>Nodrizas</strong>
+            <small>Seguimiento operativo</small>
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square flecha"></i>
+        </a>
+
+        <a class="reporte"
+          href="https://app.powerbi.com/view?r=eyJrIjoiZGI5Y2JmYmMtYTc1Ny00M2Q4LTlhNmMtYzQ4MWU3M2MxNzU4IiwidCI6IjAwMDRlNjc2LTg3OGItNDkzNi04ZWZkLWExYjQxOWZjNTBjYiJ9"
+          target="_blank">
+          <i class="fa-solid fa-ship"></i>
+          <span>
+            <strong>Estadías Expo</strong>
+            <small>Exportación</small>
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square flecha"></i>
+        </a>
+
+        <a class="reporte"
+          href="https://app.powerbi.com/view?r=eyJrIjoiYWVmZDRhNjUtYjkyOC00YzUwLWE3YjgtYjNlMjYwZDM4NzA0IiwidCI6IjAwMDRlNjc2LTg3OGItNDkzNi04ZWZkLWExYjQxOWZjNTBjYiJ9"
+          target="_blank">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span>
+            <strong>Estadías Impo</strong>
+            <small>Importación</small>
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square flecha"></i>
+        </a>
+      </aside>
+
+      <section class="visor">
+        <div class="visor-encabezado">
+          <div>
+            <p>INFORMACIÓN DESTACADA</p>
+            <h2>Actualizaciones operativas</h2>
+          </div>
+
+          <div class="contador">
+            <span id="numeroImagen">01</span> / 04
+          </div>
+        </div>
+
+        <div class="carrusel">
+          <img
+            id="imagenPrincipal"
+            src="img/inventario1.jpg"
+            alt="Actualización operativa 1">
+
+          <button
+            id="anterior"
+            class="control anterior"
+            type="button"
+            aria-label="Imagen anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <button
+            id="siguiente"
+            class="control siguiente"
+            type="button"
+            aria-label="Imagen siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div id="puntos" class="puntos"></div>
+      </section>
+
+    </section>
+  </main>
+
+  <footer>
+    Grupo TMM · Portal de Reportes Power BI
+  </footer>
+
+  <script src="scriptIndex.js"></script>
+</body>
+</html>
