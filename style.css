@@ -336,14 +336,14 @@ footer {
 }
 
 .botones-excel .BTN-Excel {
-    width: 260px;
-    min-height: 90px;
-    padding: 18px;
+    width: 210px;
+    min-height: 85px;
+    padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     text-decoration: none;
     border-radius: 10px;
     transition: transform 0.2s ease;
@@ -359,13 +359,14 @@ footer {
 }
 
 .botones-excel .BTN-Excel span {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
+    text-align: center;
 }
 
 .botones-excel .BTN-Excel small {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 12px;
 }
 /* Ocultar contador de páginas */
 .contador {
