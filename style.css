@@ -380,3 +380,17 @@ footer {
     margin-top: 5px;
     font-size: 13px;
 }
+/* Ocultar contador de páginas */
+.contador {
+    display: none;
+}
+
+/* Ocultar flechas del carrusel */
+.control {
+    display: none;
+}
+
+/* Ocultar puntos inferiores */
+.puntos {
+    display: none;
+}
