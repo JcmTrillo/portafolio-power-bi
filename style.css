@@ -241,19 +241,6 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-
-.control:hover {
-  background: var(--azul-medio);
-}
-
-.anterior {
-  left: 16px;
-}
-
-.siguiente {
-  right: 16px;
-}
-
 .puntos {
   display: flex;
   justify-content: center;
