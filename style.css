@@ -336,7 +336,12 @@ footer {
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
-
+.titulo-descargas {
+  flex: 0 0 100%;
+  margin: 0;
+  text-align: right;
+  color: #64748b;
+}
 .botones-excel .BTN-Excel {
     width: 210px;
     min-height: 85px;
