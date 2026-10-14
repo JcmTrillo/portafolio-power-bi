@@ -333,13 +333,20 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: fit-content;
-  margin: -55px 40px 20px auto;
+  margin-top: 20px;
 }
 
 .titulo-descargas {
   margin: 0;
   text-align: center;
+}
+
+.lista-excel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
 }
 .botones-excel .BTN-Excel {
     width: 210px;
