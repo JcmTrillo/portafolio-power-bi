@@ -330,7 +330,7 @@ footer {
 }
 .botones-excel {
   position: absolute;
-  top: 190px;       /* súbelo o bájalo según la altura del encabezado */
+  top: 150px;       /* súbelo o bájalo según la altura del encabezado */
   right: 5%;
   display: flex;
   flex-direction: column;
