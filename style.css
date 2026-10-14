@@ -340,13 +340,6 @@ footer {
   margin: 0;
   text-align: center;
 }
-
-.lista-excel {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 .botones-excel .BTN-Excel {
     width: 210px;
     min-height: 85px;
