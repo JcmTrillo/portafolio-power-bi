@@ -210,7 +210,8 @@ body {
 /* Imagen panorámica completa, sin recortes */
 .carrusel {
   position: relative;
-  aspect-ratio: 1263 / 555;
+  height: min(78vh, 900px);
+  min-height: 420px;
   overflow: hidden;
   border-radius: 13px;
   background: #062a57;
@@ -225,7 +226,6 @@ body {
   object-position: center;
   transition: opacity 0.25s ease;
 }
-
 .control {
   position: absolute;
   top: 50%;
@@ -297,7 +297,10 @@ footer {
     gap: 8px;
     padding: 16px;
   }
-
+.carrusel {
+  height: 55vh;
+  min-height: 280px;
+}
   .logo {
     max-width: 52px;
     max-height: 52px;
